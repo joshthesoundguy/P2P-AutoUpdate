@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="theme-color" content="#F5F1EA" />
+<title>From the Pulpit to the Palette — Bishop Donald Hilliard, Jr., D.Min.</title>
+<meta name="description" content="Art that inspires and transforms. The retrospective fine-art exhibition of Bishop Donald Hilliard, Jr., D.Min. — an abstract expressionist exploring faith, wellness, and the human spirit. Browse the collection and inquire." />
+<meta property="og:title" content="From the Pulpit to the Palette — Bishop Donald Hilliard, Jr." />
+<meta property="og:description" content="Art that inspires and transforms. A retrospective fine-art exhibition." />
+<meta property="og:type" content="website" />
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23171717'/%3E%3Ctext x='16' y='23' font-family='Georgia,serif' font-size='19' fill='%23C8A86B' text-anchor='middle'%3EH%3C/text%3E%3C/svg%3E" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Geist:wght@300;400;500;600&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="assets/site.css?v=17" />
+<script>document.documentElement.classList.add('js');</script>
+<script src="assets/artworks.js?v=2"></script>
+</head>
+<body>
+
+<a href="#collection" class="skip-link">Skip to the collection</a>
+<div class="progress" aria-hidden="true"></div>
+<div class="paint-veil" aria-hidden="true"></div>
+<canvas class="cursor-canvas" aria-hidden="true"></canvas>
+<audio id="bg-music" src="assets/music.mp3" loop preload="auto"></audio>
+<button id="audio-cue" class="audio-cue" type="button" aria-label="Play background music">
+  <span class="audio-cue-ic" aria-hidden="true">
+    <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M11 5 6 9H2v6h4l5 4V5z"/><path d="M15.5 8.5a5 5 0 0 1 0 7"/><path d="M18.5 5.5a9 9 0 0 1 0 13"/></svg>
+  </span>
+  <span class="audio-cue-txt">Play music</span>
+</button>
+
+<!-- ===== CINEMATIC INTRO ===== -->
+<div class="intro" role="presentation">
+  <div class="intro-inner">
+    <span class="intro-kicker">Bishop Donald Hilliard, Jr. &middot; D.Min.</span>
+    <div class="intro-lines">
+      <p class="intro-line l1">Some sermons are spoken.</p>
+      <p class="intro-line l2">Others are painted.</p>
+    </div>
+    <svg class="intro-brush" viewBox="0 0 620 50" fill="none" aria-hidden="true">
+      <path class="ib" pathLength="1" d="M12 30 C 150 6, 262 46, 384 26 C 472 12, 548 40, 608 24" stroke="url(#ig)" stroke-width="8" stroke-linecap="round"/>
+      <defs><linearGradient id="ig" x1="0" y1="0" x2="1" y2="0">
+        <stop offset="0" stop-color="#7A1111"/><stop offset="0.5" stop-color="#D86A17"/><stop offset="1" stop-color="#C8A86B"/>
+      </linearGradient></defs>
+    </svg>
+  </div>
+  <button class="intro-skip" type="button">Skip</button>
+</div>
+
+<!-- ===== HEADER (tabs scroll to sections) ===== -->
+<header class="header over-dark">
+  <div class="wrap">
+    <a href="#top" class="brand no-outline" aria-label="Bishop Donald Hilliard, Jr. — top">
+      <span class="name">Donald Hilliard Jr.</span>
+      <span class="sub">From the Pulpit to the Palette</span>
+    </a>
+    <nav class="nav" aria-label="Primary">
+      <a href="#collection">The<br>Collection</a>
+      <a href="#story">The<br>Story</a>
+      <a href="#work">The<br>Work</a>
+      <a href="#collectors">For<br>Collectors</a>
+      <a href="https://bishop-donald-hilliard.netlify.app/" target="_blank" rel="noopener noreferrer">The<br>Bishop</a>
+    </nav>
+    <div class="header-cta">
+      <div class="audio-ctl" role="group" aria-label="Background music">
+        <button class="audio-toggle" type="button" aria-label="Mute music" aria-pressed="false">
+          <svg class="ic-vol" width="20" height="20" viewBox="0 0 24 24" aria-hidden="true"><path d="M11 5L6 9H3v6h3l5 4V5z" fill="currentColor"/><path d="M15.5 9a4 4 0 0 1 0 6M18 6.5a8 8 0 0 1 0 11" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+          <svg class="ic-mute" width="20" height="20" viewBox="0 0 24 24" aria-hidden="true"><path d="M11 5L6 9H3v6h3l5 4V5z" fill="currentColor"/><path d="M16 9.5l5 5M21 9.5l-5 5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+        </button>
+        <input class="audio-vol" type="range" min="0" max="100" value="50" aria-label="Music volume" />
+      </div>
+      <button class="btn btn-gold" data-inquire><span>Inquire</span></button>
+    </div>
+    <button class="menu-btn" aria-label="Open menu" aria-expanded="false" aria-controls="m-menu">
+      <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke-width="1.4"><line x1="3" y1="8" x2="21" y2="8"/><line x1="3" y1="16" x2="21" y2="16"/></svg>
+    </button>
+  </div>
+</header>
+
+<!-- ===== MOBILE MENU ===== -->
+<div class="mobile-menu" id="m-menu">
+  <button class="m-close" aria-label="Close menu">
+    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M6 6l12 12M18 6L6 18"/></svg>
+  </button>
+  <nav aria-label="Mobile">
+    <a href="#collection" style="transition-delay:.05s">The Collection</a>
+    <a href="#story" style="transition-delay:.1s">The Story</a>
+    <a href="#work" style="transition-delay:.15s">The Work</a>
+    <a href="#collectors" style="transition-delay:.2s">For Collectors</a>
+    <a href="https://bishop-donald-hilliard.netlify.app/" target="_blank" rel="noopener noreferrer" style="transition-delay:.25s">The Bishop</a>
+  </nav>
+  <div class="m-foot">Art that inspires and transforms</div>
+</div>
+
+<main id="main">
+<span id="top"></span>
+
+<!-- ===== HERO ===== -->
+<section class="hero hero--minimal">
+  <div class="hero-media">
+    <picture>
+      <source media="(max-width:768px)" srcset="assets/hero-mobile.jpg?v=1" />
+      <img id="hero-img" src="assets/hero.jpg?v=2"
+           srcset="assets/hero-1024.jpg?v=2 1024w, assets/hero.jpg?v=2 1672w" sizes="100vw"
+           fetchpriority="high" decoding="async"
+           alt="Bishop Donald Hilliard, Jr. seated among his vivid abstract paintings, beside the hand-painted title From the Pulpit to the Palette and his gold signature."
+           onerror="this.onerror=null;this.removeAttribute('srcset');this.src='assets/hero-placeholder.svg';" />
+    </picture>
+  </div>
+  <div class="hero-scrim"></div>
+  <h1 class="sr-only">From the Pulpit to the Palette — A Retrospective Art Exhibition by Bishop Donald Hilliard, Jr., D.Min.</h1>
+</section>
+
+<!-- ===== THE COLLECTION ===== -->
+<section id="collection" class="section">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="reveal">
+        <p class="eyebrow">The Collection</p>
+        <h2 class="h2 mt-2">Art that inspires<br/>and transforms.</h2>
+      </div>
+      <p class="reveal lead" style="--d:.1s; max-width:38ch">Forty original works in oil, acrylic, and mixed media. Select any piece to view it larger — and inquire to discuss acquisition.</p>
+    </div>
+
+    <div class="filterbar reveal">
+      <div class="filters">
+        <div class="field"><label for="f-medium">Medium</label><div class="select"><select id="f-medium"><option value="">All media</option></select></div></div>
+        <div class="field"><label for="f-size">Size</label><div class="select"><select id="f-size"><option value="">All sizes</option></select></div></div>
+        <div class="field"><label for="f-orient">Orientation</label><div class="select"><select id="f-orient"><option value="">All</option></select></div></div>
+        <div class="field"><label>&nbsp;</label><button id="f-reset" class="btn btn-ghost" style="padding:.6rem 1.1rem"><span>Reset</span></button></div>
+      </div>
+      <div class="toolbar-right"><span class="count" id="art-count">40 works</span></div>
+    </div>
+  </div>
+
+  <!-- one work per screen, stacked top to bottom -->
+  <div class="art-grid" id="art-grid"><!-- rendered by site.js from artworks.js --></div>
+
+  <div class="wrap">
+    <p class="center muted reveal" style="font-size:.95rem">
+      Pricing is shared personally, upon request. <button class="link" data-inquire>Make an inquiry &rsaquo;</button>
+    </p>
+  </div>
+</section>
+
+<!-- ===== THE STORY — opens on the Juneteenth quote ===== -->
+<section id="story" class="section on-dark center" aria-label="In His Words">
+  <div class="wrap">
+    <p class="eyebrow reveal" style="justify-content:center">In His Words</p>
+    <blockquote class="pullquote reveal mt-3" style="max-width:24ch; margin-inline:auto; --d:.08s">“Exhibiting art to celebrate Juneteenth is a powerful act of reclaiming the narrative about our resilience and inviting dialogue about our pursuit of cultural identity.”</blockquote>
+    <p class="reveal body mt-3" style="max-width:60ch; margin-inline:auto; color:rgba(245,241,234,.7); --d:.14s">This exhibition celebrates a significant moment in history and highlights the ongoing contributions of African American artists to our cultural landscape.</p>
+    <p class="reveal quote-cite" style="--d:.2s">Bishop Donald Hilliard, Jr., D.Min.</p>
+
+    <div class="reveal exhibit-note mt-5" style="--d:.28s; max-width:60ch; margin:2.6rem auto 0; padding-top:2.2rem; border-top:1px solid rgba(245,241,234,.16);">
+      <p class="eyebrow" style="justify-content:center; color:var(--gold)">Celebrating Juneteenth</p>
+      <h3 class="mt-2" style="font-family:var(--serif); font-weight:500; font-size:clamp(1.7rem,3.6vw,2.6rem); line-height:1.05;">In the Frame</h3>
+      <p class="body mt-3" style="color:rgba(245,241,234,.82)">A group exhibition featuring art by Janice Frame, Donald Hilliard, Jr., D.Min., Shimoda Donna Emanuel and Suesan Stovall.</p>
+      <p class="body mt-3" style="color:rgba(245,241,234,.78)">Displayed June 19, 2024 – July 14, 2024 at Mariposa Museum</p>
+      <p style="margin-top:.3rem; color:rgba(245,241,234,.72)">57 Circuit Avenue, Oak Bluffs, MA</p>
+    </div>
+  </div>
+</section>
+
+<!-- ===== THE STORY (body) ===== -->
+<section class="section story">
+  <div class="wrap">
+    <div class="split">
+      <div class="split-left">
+        <p class="eyebrow reveal">The Story</p>
+        <h2 class="reveal mt-2" style="font-family:var(--serif); font-weight:500; font-size:clamp(2.1rem,4.4vw,3.6rem); line-height:1.04; --d:.06s">“Say Yes!”</h2>
+        <p class="reveal body mt-3" style="--d:.12s">Bishop Donald Hilliard, Jr., D.Min., is a servant of God who continues to “Say Yes!” to the Lord’s call on his life — and by doing so has positively affected the lives of thousands with his gift to turn a glimmer of hope into opportunity.</p>
+        <figure class="reveal story-portrait mt-4" style="--d:.18s">
+          <img src="assets/dhj-standing.jpg" width="1500" height="1002" alt="Bishop Donald Hilliard, Jr. standing with his artwork." loading="lazy" />
+          <figcaption>Bishop Donald Hilliard, Jr.</figcaption>
+        </figure>
+      </div>
+
+      <div class="story-body reveal" style="--d:.1s">
+        <p>“Say Yes!” is a trademark of Bishop Hilliard, a visionary leader who at the age of 26 became the Senior Pastor of the Historic Second-Baptist Church in Perth Amboy, NJ. Under Dr. Hilliard’s leadership, Second Baptist grew from 125 members in 1983 to 6,000 members today. Now, “One Church in Three Locations,” the Cathedral International has expanded its ministry to three communities in New Jersey: Perth Amboy, Asbury Park and Plainfield.</p>
+        <p>Consecrated as Bishop in 1995, Dr. Hilliard is the Presiding Bishop and Founder of the Covenant Ecumenical Fellowship and Cathedral Assemblies, Inc. In this role, Bishop Hilliard serves as the spiritual advisor and mentor for several pastors and churches across the United States and West Africa.</p>
+        <p>Never one to remain stagnant, Bishop Hilliard resurrected a gift that had been dormant for decades when he started painting in 2006 after a life-threatening illness. Bishop Hilliard’s abstract expressionist style explores the world of deep emotional and spiritual connections that has guided his ministry to touch and transform lives around the world.</p>
+        <p>Dr. Hilliard earned a Bachelor of Arts degree from Eastern College (now Eastern University), St. Davids, Pennsylvania; the Master of Divinity degree from Princeton Theological Seminary, Princeton, NJ; and the Doctor of Ministry degree from the United Theological Seminary, Dayton, Ohio, as a Dr. Samuel D. Proctor Fellow. He is also the recipient of various honorary doctoral degrees and numerous awards for his community service around the world.</p>
+        <p>Most know Bishop Donald Hilliard, Jr. as a profound leader in the Christian Church, but he also hones a practice in abstract expressionism in his home studio. He began painting in 2006 and has built an enthusiastic following of collectors who are energized by the subtle symbolism in his work.</p>
+        <p>Hilliard’s work is designed to uplift, motivate and encourage self-reflection. That’s because his painterly vocabulary, communicated in colors and brushstrokes, somehow tells our stories without the benefit of words. At the core of his work is a vivid understanding of the human condition. Through this collection, we invite viewers to examine the role of faith in their own wellness journey.</p>
+        <h3 class="mt-4" style="font-family:var(--serif); font-weight:500; font-size:clamp(1.35rem,2.4vw,1.6rem); line-height:1.1;">Earlier Collections</h3>
+        <p class="mt-2">Bishop Hilliard created his earlier <em>“Let Go, Let Gesture: Abstract Ascension”</em> collection to explore the world of deep emotional and spiritual connections that has guided his ministry to touch and transform lives in the United States, Africa, and Central America. An assortment of oils, acrylic and mixed-media work, Donald’s abstract expressionist style is a fresh interpretation of color, form and context. Designed to inspire self-reflection, <em>“Divine Liturgy in Abstract”</em> is both empowering and encouraging — transcending cultural, political and socio-economic bounds.</p>
+      </div>
+    </div>
+
+    <!-- real facts -->
+    <dl class="reveal facts">
+      <div><dd class="display"><span data-count="6000" data-format="comma">0</span></dd><dt class="eyebrow">Members today</dt></div>
+      <div><dd class="display"><span data-count="3">0</span></dd><dt class="eyebrow">Locations, one church</dt></div>
+      <div><dd class="display">2006</dd><dt class="eyebrow">Began painting</dt></div>
+      <div><dd class="display">1995</dd><dt class="eyebrow">Consecrated bishop</dt></div>
+    </dl>
+  </div>
+</section>
+
+<!-- ===== THE WORK ===== -->
+<section id="work" class="section">
+  <div class="wrap">
+    <div class="split">
+      <div class="split-left">
+        <p class="eyebrow reveal">The Work</p>
+        <h2 class="h2 reveal mt-2" style="--d:.06s">The retrospective.</h2>
+        <p class="reveal body mt-3" style="--d:.12s">Bishop Donald Hilliard, Jr.’s revealing retrospective presents collectors and enthusiasts with his journey into the connection between faith and wellness. Each piece is infused with emotion, depth, and the essence of faith — resonating with messages of hope, resilience, and the beauty of the human spirit.</p>
+      </div>
+
+      <div class="reveal" style="--d:.1s">
+        <figure class="ex-feature">
+          <img src="assets/art/crossroad-t.jpg" alt="Crossroad — Mixed Media on Paper and Canvas, 48 × 60.5 in, by Bishop Donald Hilliard, Jr." loading="lazy" />
+        </figure>
+        <div class="prints mt-4">
+          <p class="eyebrow">Limited-Edition Prints</p>
+          <p class="body mt-2"><strong style="font-weight:500">Every painting in the collection is available as a limited-edition fine-art print.</strong> Each print is produced with archival pigment inks on museum-quality 100% cotton archival fine-art paper for maximum integrity and longevity — hand numbered, signed by the artist, and accompanied by a signed certificate of authenticity.</p>
+          <p class="body mt-2"><strong style="color:var(--burgundy); font-weight:500">A percentage of the proceeds from the sale of these prints is donated to the American Heart Association.</strong></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="reveal center mt-5" style="--d:.2s">
+      <button class="btn btn-gold" data-inquire data-piece="Limited Edition Prints"><span>Inquire About Limited-Edition Prints</span></button>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FOR COLLECTORS ===== -->
+<section id="collectors" class="section collectors">
+  <div class="wrap split" style="align-items:center">
+    <div>
+      <p class="eyebrow reveal">For Collectors</p>
+      <h2 class="h2 reveal mt-2" style="--d:.06s">A personal<br/>conversation.</h2>
+    </div>
+    <div>
+      <p class="reveal lead" style="color:rgba(245,241,234,.74)">Acquiring a work by Bishop Hilliard begins with a conversation, not a transaction. Select a piece, send an inquiry, and a member of the team will reach out personally to discuss pricing, provenance, and placement.</p>
+      <div class="reveal flex-cta mt-4" style="--d:.08s">
+        <button class="btn btn-gold" data-inquire><span>Inquire About a Piece</span></button>
+        <a href="#collection" class="btn btn-ghost btn-on-dark"><span>Browse the Collection</span></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ===== FOOTER ===== -->
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer-top">
+      <div class="f-brand">
+        <div class="name">Bishop Donald Hilliard, Jr.</div>
+        <p class="mt-2" style="color:rgba(245,241,234,.6); max-width:36ch">From the Pulpit to the Palette — art that inspires and transforms. An abstract expressionist exploring faith, wellness, and the human spirit.</p>
+      </div>
+      <div>
+        <h5>Explore</h5>
+        <ul>
+          <li><a href="#collection">The Collection</a></li>
+          <li><a href="#story">The Story</a></li>
+          <li><a href="#work">The Work</a></li>
+          <li><a href="#collectors">For Collectors</a></li>
+          <li><a href="https://bishop-donald-hilliard.netlify.app/" target="_blank" rel="noopener noreferrer">The Bishop</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Inquire</h5>
+        <ul>
+          <li><button class="link" data-inquire style="color:rgba(245,241,234,.7)">Inquire about a piece</button></li>
+          <li><a href="mailto:info@pulpit2palette.com">info@pulpit2palette.com</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© <span id="year">2026</span> Bishop Donald Hilliard, Jr. All rights reserved.</p>
+      <p>From the Pulpit to the Palette</p>
+    </div>
+  </div>
+</footer>
+
+<!-- ===== LIGHTBOX (image expand) ===== -->
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Artwork preview">
+  <div class="lb-backdrop" data-lb-close></div>
+  <button class="lb-close" data-lb-close aria-label="Close preview">
+    <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M6 6l12 12M18 6L6 18"/></svg>
+  </button>
+  <button class="lb-nav lb-prev" data-lb-prev aria-label="Previous work">
+    <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M15 6l-6 6 6 6"/></svg>
+  </button>
+  <button class="lb-nav lb-next" data-lb-next aria-label="Next work">
+    <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M9 6l6 6-6 6"/></svg>
+  </button>
+  <figure class="lb-fig">
+    <img class="lb-img" alt="" />
+    <figcaption class="lb-cap">
+      <div>
+        <span class="lb-title"></span>
+        <span class="lb-meta"></span>
+      </div>
+      <button class="btn btn-gold lb-inquire"><span>Inquire about this piece</span></button>
+    </figcaption>
+  </figure>
+</div>
+
+<!-- ===== INQUIRY MODAL ===== -->
+<div class="modal" id="inquiry" role="dialog" aria-modal="true" aria-labelledby="iq-title">
+  <div class="modal-backdrop" data-close></div>
+  <div class="modal-panel">
+    <button class="modal-close" data-close aria-label="Close inquiry form">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M6 6l12 12M18 6L6 18"/></svg>
+    </button>
+    <p class="eyebrow">Artwork Inquiry</p>
+    <h3 class="h3" id="iq-title" style="margin-top:.6rem">Inquire About a Piece</h3>
+    <p class="for-piece muted">A team member will respond personally to discuss pricing and acquisition.</p>
+    <form novalidate>
+      <input type="hidden" name="artwork_id" id="iq-id" />
+      <div class="form-grid">
+        <div class="in full"><label for="iq-artwork">Artwork of interest</label>
+          <div class="select" style="width:100%"><select id="iq-artwork" name="artwork" required>
+            <option value="">Select a piece…</option>
+            <option value="General Inquiry">General Inquiry</option>
+            <option value="Limited Edition Prints">Limited Edition Prints</option>
+          </select></div>
+        </div>
+        <div class="in"><label for="iq-name">Name</label><input id="iq-name" name="name" type="text" autocomplete="name" required /></div>
+        <div class="in"><label for="iq-email">Email</label><input id="iq-email" name="email" type="email" autocomplete="email" required /></div>
+        <div class="in"><label for="iq-phone">Phone</label><input id="iq-phone" name="phone" type="tel" autocomplete="tel" /></div>
+        <div class="in"><label for="iq-loc">City / State</label><input id="iq-loc" name="location" type="text" /></div>
+        <div class="in full"><label for="iq-org">Organization (optional)</label><input id="iq-org" name="organization" type="text" /></div>
+        <div class="in full"><label for="iq-type">Intended Purchase Type</label>
+          <div class="select" style="width:100%"><select id="iq-type" name="purchase_type">
+            <option>Private Collection</option><option>Church Collection</option><option>Corporate Collection</option>
+            <option>Gallery Acquisition</option><option>Museum Acquisition</option><option>Other</option>
+          </select></div>
+        </div>
+        <div class="in full"><label for="iq-msg">Message</label><textarea id="iq-msg" name="message" placeholder="Tell us about your interest…"></textarea></div>
+      </div>
+      <label class="check mt-2"><input type="checkbox" name="consent" /> <span>I understand artwork pricing is provided upon request.</span></label>
+      <p class="form-status" role="status" aria-live="polite"></p>
+      <button class="btn btn-primary btn-block mt-2" type="submit">Send Inquiry</button>
+    </form>
+  </div>
+</div>
+
+<script src="assets/site.js?v=16"></script>
+</body>
+</html>
